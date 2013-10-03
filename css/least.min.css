@@ -1,0 +1,148 @@
+@import url(http://fonts.googleapis.com/css?family=Arvo);
+
+@font-face {
+  font-family: 'PFCatalogThin-Regular';
+  src: url('../fonts/PFCatalogThin-Regular.otf'); /* IE9 Compat Modes */
+}
+
+/**
+*** least.
+*** Author: Kamil Czujowski, Sergej Müller
+*** Version: 1.5
+*** Made with ♥ - Copyright (c) 2013 Hamburg, Germany - All rights reserved.
+*** https://twitter.com/kamilczujowski, http://wpcoder.de
+**/
+/* @group Mixins */
+/* @end */
+/* @group Colors */
+/* @end */
+/* @group Default */
+/* @end */
+/* @group Gallery */
+#content section {
+  min-width: 100%;
+  width: 100%;
+  min-height: 100%;
+  text-align: center;
+  padding: 30px 0;
+  margin-bottom: 30px;
+  background-color: #333333;
+  box-shadow: 0 10px 10px rgba(0,0,0,0.4);
+  /* @group Fullimage */
+  /* @end */
+  /* @group Smallimages */ }
+#content section #fullPreview {
+    background-color: #333333;
+    border-top: 2px solid #333333;
+    border-bottom: 2px solid #333333;
+    padding: 50px 0 30px 0;
+    display: none; }
+    section #fullPreview img,
+   #content section #fullPreview .fullCaption {
+      max-width: 960px;
+      width: 100%;
+      margin: 0 auto;
+      display: block; }
+   #content section #fullPreview .fullCaption {
+      font-family: PFCatalogThin-Regular, Arial, sans-serif;
+      font-size: 13px;
+      line-height: 15px;
+      font-weight: 300;
+      color: white;
+      margin: 15px auto 0 auto; }
+   #content section #fullPreview figure {
+      background-image: url("../img/effects/close.png");
+      background-size: 100%;
+      width: 30px;
+      height: 30px;
+      position: absolute;
+      top: 10px;
+      right: 20px;
+      cursor: pointer; }
+ #content section li {
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    /* @group Over */
+    /* @group Description */
+    /* @end *
+    /* @end */ }
+   #content section li:hover .overLayer {
+      -webkit-transition: opacity 0.3s linear;
+      -moz-transition: opacity 0.3s linear;
+      -ms-transition: opacity 0.3s linear;
+      -o-transition: opacity 0.3s linear;
+      transition: opacity 0.3s linear;
+      opacity: 0.6;
+      display: block;
+      background: gray; }
+   #content section li:hover .infoLayer {
+      -webkit-transition: opacity 0.3s linear;
+      -moz-transition: opacity 0.3s linear;
+      -ms-transition: opacity 0.3s linear;
+      -o-transition: opacity 0.3s linear;
+      transition: opacity 0.3s linear;
+      opacity: 1;
+      display: block; }
+    #content section li a {
+      display: block;
+      width: 240px;
+      height: 150px;
+      position: absolute;
+      top: 10px;
+      left: 0;
+      z-index: 6; }
+      #content section li a.spinner {
+        background-size: 100%;
+        background-image: url("../img/effects/spinner.gif");
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        left: 95px;
+        top: 60px; }
+    #content section li img {
+      border: none;
+      margin: 10px 10px 0 0; }
+    #content section li .overLayer,
+    #content section li .infoLayer {
+      -webkit-transition: opacity 0.3s linear;
+      -moz-transition: opacity 0.3s linear;
+      -ms-transition: opacity 0.3s linear;
+      -o-transition: opacity 0.3s linear;
+      transition: opacity 0.3s linear;
+      width: 240px;
+      height: 150px;
+      position: absolute;
+      text-align: center;
+      opacity: 0;
+      top: 10px;
+      left: 0;
+      z-index: 4;
+      /* @end */ }
+      #content section li .overLayer ul,
+      #content section li .infoLayer ul {
+        padding: 50px 0 0 0; }
+        #content section li .overLayer ul li,
+        #content section li .infoLayer ul li {
+          display: block;
+          margin: 0 auto;
+          width: 200px;
+          padding: 0 0 5px 0; }
+          #content section li .overLayer ul li:first-child,
+          #content section li .infoLayer ul li:first-child {
+            border-bottom: 2px white solid; }
+          #content section li .overLayer ul li:last-child,
+          #content section li .infoLayer ul li:last-child {
+            padding: 5px 0 0 0;
+            text-transform: lowercase; }
+          #content section li .overLayer ul li h2,
+          #content section li .infoLayer ul li h2 {
+            font-size: 25px; }
+    #content section li .projectInfo {
+      display: none; }
+
+      #content ul{
+        list-style-type: none;
+      }
+
+/* end */
